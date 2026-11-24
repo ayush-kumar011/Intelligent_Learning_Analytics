@@ -76,7 +76,7 @@ if not user:
     auth_screen()
     st.stop()
 
-from pages import (admin_content, admin_models, admin_overview, admin_students, reports,  # noqa: E402
+from views import (admin_content, admin_models, admin_overview, admin_students, reports,  # noqa: E402
                    student_dashboard, student_log, student_profile, student_recommendations)
 
 P = st.Page

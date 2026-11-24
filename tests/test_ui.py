@@ -13,7 +13,7 @@ ADMIN_PAGES = ["admin_overview", "admin_students", "admin_models", "admin_conten
 
 
 def _page(module, user):
-    at = AppTest.from_string(f"from pages import {module}\n{module}.render()", default_timeout=90)
+    at = AppTest.from_string(f"from views import {module}\n{module}.render()", default_timeout=90)
     at.session_state["user"] = user
     return at.run()
 

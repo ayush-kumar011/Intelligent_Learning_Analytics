@@ -1,7 +1,7 @@
 import streamlit as st
 
 from analytics import metrics
-from pages.student_dashboard import render_student_analytics
+from views.student_dashboard import render_student_analytics
 from recommendations import engine
 from utils.ui import require_role, risk_badge, table
 
