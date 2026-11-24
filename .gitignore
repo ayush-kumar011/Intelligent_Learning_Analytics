@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+models/artifacts/
+data/synthetic/
+.venv/
+.pytest_cache/
+*.zip
